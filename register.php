@@ -17,7 +17,7 @@
 			<!-- Header -->
 				<section id="header">
 					<div class="container">
-						<h1 id="logo">會員註冊</h2>
+						<h1 id="logo">會員註冊</h1>
 					</div>
 				</section>
 
