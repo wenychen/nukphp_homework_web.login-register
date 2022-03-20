@@ -36,7 +36,7 @@
 								</header>
 									<?php
 										$uaccount = $_POST['uaccount'];
-										$upsd = $_POST['upsd'];
+										$upsw = $_POST['upsw'];
 										$uname = $_POST['uname'];
 										$utel = $_POST['utel'];
 										$uemail = $_POST['uemail'];
@@ -44,37 +44,40 @@
 										$uid = $_POST['uid'];
 										$usex = $_POST['usex'];
 									?>
-									<table>
+									<table style="margin: 0px auto; width: 60%;">
 										<tr>
-											<td style="text-align: left;">帳號:</td>
+											<td colspan="2"><img src="<?php echo $_FILES['uphoto']['name'] ?>" width="150px" height="150px"></img></td>
+										</tr>
+										<tr>
+											<td style="text-align: left;">帳號</td>
 											<td style="text-align: left;"><?php echo $uaccount; ?></td>
 										</tr>
 										<tr>
-											<td style="text-align: left;">密碼:</td>
-											<td style="text-align: left;"><?php echo $upsd; ?></td>
+											<td style="text-align: left;">密碼</td>
+											<td style="text-align: left;"><?php echo $upsw; ?></td>
 										</tr>
 										<tr>
-											<td style="text-align: left;">姓名:</td>
+											<td style="text-align: left;">姓名</td>
 											<td style="text-align: left;"><?php echo $uname ?></td>
 										</tr>
 										<tr>
-											<td style="text-align: left;">電話:</td>
+											<td style="text-align: left;">電話</td>
 											<td  style="text-align: left;"><?php echo $utel; ?></td>
 										</tr>
 										<tr>
-											<td style="text-align: left;">E-mail:</td>
+											<td style="text-align: left;">E-mail</td>
 											<td style="text-align: left;"><?php echo $uemail; ?></td>
 										</tr>
 										<tr>
-											<td style="text-align: left;">生日:</td>
+											<td style="text-align: left;">生日</td>
 											<td style="text-align: left;"><?php echo $ubir; ?></td>
 										</tr>
 										<tr>
-											<td style="text-align: left;">身份證字號:</td>
+											<td style="text-align: left;">身份證字號</td>
 											<td style="text-align: left;"><?php echo $uid; ?></td>
 										</tr>
 										<tr>
-											<td style="text-align: left;">性別:</td>
+											<td style="text-align: left;">性別</td>
 										 	<td style="text-align: left;">
 												<?php 
 												if ($usex=='1') {
@@ -89,7 +92,7 @@
 										 	</td>
 										</tr>
 										<tr>
-											<td style="text-align: left;">會員照:</td>
+											<td style="text-align: left;">會員照資訊</td>
 											<td style="text-align: left;">
 												<?php 
 												echo $_FILES['uphoto']['name'].'</br>';
@@ -102,6 +105,7 @@
 												echo 'failed';
 												}
 												?>
+														
 											</td>
 										</tr>
 									</table>	

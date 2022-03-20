@@ -30,12 +30,11 @@
 											<table>
 												<tr>
 													<td>帳號</td>
-													<td><input type="text" name="uaccount"onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" maxlength="20" pattern="[a-zA-Z0-9]{4}" placeholder="請輸入包含英文與數字的4~20個字元" required="required"></td>
+													<td><input type="text" name="uaccount"onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" maxlength="20" placeholder="請輸入您要設定的帳號" required="required"></td>
 												</tr>
 												<tr>
-												<tr>
 													<td>密碼</td>
-													<td><input type="password" name="upsw"onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" maxlength="20" pattern="[a-zA-Z0-9]{4}" placeholder="請輸入包含英文與數字的4~20個字元" required="required"></td>
+													<td><input type="password" name="upsw"onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" placeholder="請輸入您要設定的密碼" required="required"></td>
 												</tr>
 												<tr>	
 												<tr>
