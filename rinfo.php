@@ -44,7 +44,7 @@
 										$uid = $_POST['uid'];
 										$usex = $_POST['usex'];
 									?>
-									<table style="border: 1px solid #00; border-collapse: collapse;border:8px #FFD382 groove; width: 100%;">
+									<table>
 										<tr>
 											<td style="text-align: left;">帳號:</td>
 											<td style="text-align: left;"><?php echo $uaccount; ?></td>
