@@ -37,7 +37,7 @@
 								<form action="" method="post" style="width: 60%; margin: 0px auto;" enctype="multipart/form-data">
 									<table>
 										<tr>
-											<img src="/php_homework/web.login&register/images/user.png" width="150px" height="150px">
+											<img src="/php_homework/web.login.register/images/user.png" width="150px" height="150px">
 										</tr>
 										<tr>
 											<td><input type="text" name="uaccount" style="text-align: center;" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" maxlength="20" pattern="[a-zA-Z0-9]{4}" placeholder="您的帳號" required="required"></td>
@@ -51,10 +51,14 @@
 											</td>
 										</tr>
 										<tr>
-											<td><a href="">忘記帳號與密碼</a></td>
+											<td>
+												<input type="button" value="忘記帳號與密碼" onclick="javascript:location.href=''" style="width: 100%;">
+											</td>
 										</tr>
 										<tr>
-											<td><a href="register.php">註冊去！</a></td>
+											<td>
+												<input type="button" value="註冊去！" onclick="javascript:location.href='register.php'" style="width: 100%;">
+											</td>
 										</tr>
 									</table>
 								</form>		

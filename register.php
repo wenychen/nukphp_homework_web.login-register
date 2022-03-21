@@ -59,7 +59,7 @@
 												</tr>
 												<tr>
 													<td>性別</td>
-													<td align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="usex" value="1">男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="usex" value="2">女&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="usex" value="3">不方便透露</td>
+													<td align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="usex" value="1" required="required">男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="usex" value="2">女&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="usex" value="3">不方便透露</td>
 												</tr>
 												<tr>
 													<td rowspan="2">會員照</td>
@@ -81,29 +81,30 @@
 
 														        var fileData = e.target.files[0]; // 檔案資訊
 														        var fileName = fileData.name; // 檔案名稱
-														        var fileType = fileData.type; // 檔案類型
-														        var fileSize = Math.floor(fileData.size * 0.001); // 檔案大小轉成kb
-														        var fileTime = fileData.lastModifiedDate;
+														        // var fileType = fileData.type; // 檔案類型
+														        // var fileSize = Math.floor(fileData.size * 0.001); // 檔案大小轉成kb
+														        // var fileTime = fileData.lastModifiedDate;
 
-														        console.log(fileData); // 用開發人員工具可看到資料
+														        // console.log(fileData); // 用開發人員工具可看到資料
 
 														        document.getElementById('file_name').innerText = fileName;
-														        document.getElementById('file_type').innerText = fileType;
-														        document.getElementById('file_size').innerText = fileSize + 'kb';
-														        document.getElementById('file_time').innerText = fileTime;
-														        document.getElementById('file_thumbnail').src = URL.createObjectURL(fileData);
+														        // document.getElementById('file_type').innerText = fileType;
+														        // document.getElementById('file_size').innerText = fileSize + 'kb';
+														        // document.getElementById('file_time').innerText = fileTime;
+														        // document.getElementById('file_thumbnail').src = URL.createObjectURL(fileData);
 
 														      }, false);
 
 														    </script>
 													</td>
 												</tr>
-											</table>
-
-											<div class="col-12">
-													<input type="submit" name="" value="註冊會員">
-													<input type="reset" name="" value="清除資料">
-											</div>
+												<tr>
+													<td colspan="2">
+														<input type="submit" name="" value="註冊會員">
+														<input type="reset" name="" value="清除資料">
+														<input type="button" value="登入會員" onclick="javascript:location.href='login.php'">
+													</td>
+												</tr>
 										</form>										
 						</div>
 					</div>

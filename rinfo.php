@@ -84,10 +84,8 @@
 											 	echo '男';} 
 											 	elseif ($usex=='2') {
 											 	echo '女';}
-											 	elseif ($usex=='3') {
-											 	echo '不方便透露';}
-											 	if ($usex=='5') {
-											 	echo '不明';}
+											 	if ($usex=='3') {
+											 	echo '不方便透露';}											 	
 											 	?>
 										 	</td>
 										</tr>
@@ -95,18 +93,21 @@
 											<td style="text-align: left;">會員照資訊</td>
 											<td style="text-align: left;">
 												<?php 
-												echo $_FILES['uphoto']['name'].'</br>';
-												echo $_FILES['uphoto']['tmp_name'].'</br>';
-												echo $_FILES['uphoto']['size'].'</br>';
-												echo $_FILES['uphoto']['type'].'</br>';
-												if(copy($_FILES['uphoto']['tmp_name'],$_FILES['uphoto']['name'])){
+													echo $_FILES['uphoto']['name'].'</br>';
+													echo $_FILES['uphoto']['tmp_name'].'</br>';
+													echo $_FILES['uphoto']['size'].'</br>';
+													echo $_FILES['uphoto']['type'].'</br>';
+													if(copy($_FILES['uphoto']['tmp_name'],$_FILES['uphoto']['name'])){
 													echo 'success';
-												}else{
-												echo 'failed';
-												}
+													}else{
+													echo 'failed';
+													}
 												?>
 														
 											</td>
+										</tr>
+										<tr>
+											<td colspan="2"><input type="button" value="登入會員去！" onclick="javascript:location.href='login.php'"></td>
 										</tr>
 									</table>	
 								</section>

@@ -37,14 +37,17 @@
 								<form action="" method="post" style="width: 60%; margin: 0px auto;" enctype="multipart/form-data">
 									<table>
 										<tr>
-											<td><a href="login.php">重新登入</a></td>
-										</tr>
+											<td>
+												<input type="button" value="登入會員" onclick="javascript:location.href='login.php'" style="width: 100%;">
+											</td>
+											<td>
+												<input type="button" value="註冊去！" onclick="javascript:location.href='register.php'" style="width: 100%;">
+											</td>
 										</tr>
 										<tr>
-											<td colspan="2"><a href="">忘記帳號與密碼</a></td>
-										</tr>
-										<tr>
-											<td colspan="2"><a href="register.php">註冊去！</a></td>
+											<td colspan="2">
+												<input type="button" value="忘記帳號與密碼" onclick="javascript:location.href=''" style="width: 100%;">
+											</td>
 										</tr>
 									</table>
 								</form>		
