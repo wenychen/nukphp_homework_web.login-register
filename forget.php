@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>會員登入失敗</title>
+		<title>會員登入忘記帳號與密碼</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="NUKIM_php_homework">
@@ -19,7 +19,7 @@
 					<div class="container">
 
 						<!-- Nav -->
-						<h1 id="logo">會員登入失敗</h1>
+						<h1 id="logo">忘記帳號與密碼</h1>
 					</div>
 				</section>
 
@@ -37,6 +37,21 @@
 								<form action="" method="post" style="width: 60%; margin: 0px auto;" enctype="multipart/form-data">
 									<table>
 										<tr>
+											<td colspan="2">
+												<input type="text" name="uname"placeholder="請輸入您註冊的名字" required="required" style="width: 100%; text-align: center;">
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<input type="email" name="uemail"placeholder="請輸入您註冊的E-mail" required="required" style="width: 100%;text-align: center;">
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<input type="button" value="取回帳號與密碼" onclick="javascript:location.href=''" style="width: 100%;">
+											</td>
+										</tr>
+										<tr>
 											<td>
 												<input type="button" value="登入會員" onclick="javascript:location.href='login.php'" style="width: 100%;">
 											</td>
@@ -44,11 +59,7 @@
 												<input type="button" value="註冊去！" onclick="javascript:location.href='register.php'" style="width: 100%;">
 											</td>
 										</tr>
-										<tr>
-											<td colspan="2">
-												<input type="button" value="忘記帳號與密碼" onclick="javascript:location.href='forget.php'" style="width: 100%;">
-											</td>
-										</tr>
+										
 									</table>
 								</form>		
 								</section>
